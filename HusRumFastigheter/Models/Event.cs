@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HusRumFastigheter.Models
 {
-    public class Door
+    public class Event
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
-        [Required , MaxLength(15)]
-        public string DoorCode { get; set; }
+        public int id { get; set; }
+        [Required,MaxLength(20)]
+        public string EventCode { get; set; }
     }
 }
